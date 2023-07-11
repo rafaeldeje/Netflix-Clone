@@ -1,0 +1,81 @@
+:root {
+    --fonte: white;
+    --fundo: rgb(20, 20, 20);
+    --fonte2: rgb(80, 80, 80);
+}
+
+/*Criando :root para denominar uma variavel para facilitar quando for usar*/
+
+body {
+    background-color: var(--fundo);
+    color: var(--fonte)
+}
+
+.pessoas {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.pessoa img {
+    height: 120px;
+    width: 100%;
+    border-radius: 4%;
+    border: solid transparent;
+}
+
+.pessoa {
+    max-width: 120px;
+    /*vai ser o espacamento dos usuarios*/
+}
+
+.QuemEstaAssistindo {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.pessoa p {
+    text-align: center;
+    color: var(--fonte2);
+}
+
+.gerenciarperfis {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.gerenciarperfis button {
+    background-color: var(--fundo);
+    color: var(--fonte2);
+    padding: 10px 20px;
+    border: solid 0.1px;
+    cursor: pointer;
+}
+
+.gerenciarperfis button:hover
+
+/*quem quando eu pasar o mouse em cima ele vai ignorar o css de cima e vai usar o css de baixo*/
+    {
+    color: var(--fonte);
+}
+
+.pessoa:hover>p {
+    color: var(--fonte);
+
+}
+
+.pessoa:hover>img {
+    border: solid;
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
